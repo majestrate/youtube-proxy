@@ -1,0 +1,5 @@
+Flask
+youtube-dl
+celery
+gunicorn
+redis

@@ -1,0 +1,6 @@
+*~
+*.pyc
+static
+venv
+*.log
+__pycache__
