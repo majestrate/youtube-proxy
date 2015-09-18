@@ -15,7 +15,7 @@ def get_youtube(video_id):
             return render_template("progress.html", message="is downloading...", video_id=video_id)
         elif not os.path.exists(fname):
             youtube.download.apply_async((video_id, fname))
-            return render_template("progress.html", message="has started", video_id=video_id)
+            return render_template("progress.html", message="has started downloading", video_id=video_id)
     else:
         abort(404)
     return redirect('/yt/static/{}.mp4'.format(video_id))
